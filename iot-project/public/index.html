@@ -46,14 +46,17 @@
       <h1>IOT Smart Thermometer</h1>
       <p>You're seeing this because I let you</p>
     </div>
-
-    <h1>Data Display</h1>
+    <!-- Input field for temperature unit selection -->
     <div class="input-container">
-      <label for="desiredTemperature">Desired Temperature (F):</label>
-      <input type="number" id="desiredTemperature" name="desiredTemperature" placeholder="Enter desired temperature..." class="temperature-input" step="1">
+      <label for="temperatureUnit">Choose Temperature Unit:</label>
+      <select id="temperatureUnit" name="temperatureUnit" class="temperature-unit">
+       <option value="F">Fahrenheit</option>
+       <option value="C">Celsius</option>
+      </select>
     </div>
+
     <div class="input-container">
-      <label for="desiredTemperature">Desired Temperature (C):</label>
+      <label for="desiredTemperature">Desired Temperature:</label>
       <input type="number" id="desiredTemperature" name="desiredTemperature" placeholder="Enter desired temperature..." class="temperature-input" step="1">
     </div>
     <div class="data-container">
@@ -199,6 +202,17 @@
     border-radius: 4px;
     box-sizing: border-box;
   }
+
+  /* Select field styles */
+.temperature-unit {
+  width: 200px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 </style>
 
     <script>
