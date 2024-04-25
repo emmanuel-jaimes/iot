@@ -37,7 +37,6 @@
         body { border-top: 16px solid #ffa100; }
       }
     </style>
-
   </head>
 
   <body>
@@ -59,6 +58,7 @@
       <label for="desiredTemperature">Desired Temperature:</label>
       <input type="number" id="desiredTemperature" name="desiredTemperature" placeholder="Enter desired temperature..." class="temperature-input" step="1">
     </div>
+
     <div class="data-container">
       <div class="data-visual" id="temperatureVisual">
         <h1>Temperature</h1>
@@ -133,87 +133,85 @@
       });
     </script>
 
-<style>
-  h1, h2, p {text-align: center;
-  }
-  /* Container for data visuals */
-  .data-container {
-    display: flex; /* Use flexbox layout */
-    justify-content: space-around; /* Distribute space evenly between elements */
-    align-items: center; /* Center vertically */
-    margin-top: 20px;
-  }
+    <style>
+      h1, h2, p {text-align: center;} 
+      /* Container for data visuals */
+      .data-container {
+        display: flex; /* Use flexbox layout */
+        justify-content: space-around; /* Distribute space evenly between elements */
+        align-items: center; /* Center vertically */
+        margin-top: 20px;
+      }
 
-  /* Styles for each data visual */
-  .data-visual {
-    text-align: center;
-    width: 200px; /* Adjust as needed */
-  }
+      /* Styles for each data visual */
+      .data-visual {
+        text-align: center;
+        width: 200px; /* Adjust as needed */
+      }
 
-  /* Thermometer styles */
-  .thermometer, .humidity {
-    width: 100%;
-    height: 400px;
-    background-color: #f0f0f0;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-  }
+      /* Thermometer styles */
+      .thermometer, .humidity {
+        width: 100%;
+        height: 400px;
+        background-color: #f0f0f0;
+        border-radius: 15px;
+        position: relative;
+         overflow: hidden;
+      }
 
-  /* Fluid level for thermometer */
-  .fluid {
-    width: 100%;
-    background-color: #3498db;
-    position: absolute;
-    bottom: 0;
-    transition: height 0.5s ease;
-  }
+      /* Fluid level for thermometer */
+     .fluid {
+        width: 100%;
+        background-color: #3498db;
+        position: absolute;
+        bottom: 0;
+        transition: height 0.5s ease;
+      }
 
-  /* Temperature and humidity labels */
-  .temperature-label, .humidity-label {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-  }
+      /* Temperature and humidity labels */
+      .temperature-label, .humidity-label {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+      }
 
-  /* Humidity bar */
-  .humidity-bar {
-    width: 50px;
-    background-color: #27ae60;
-    position: absolute;
-    bottom: 0;
-    transition: height 0.5s ease;
-  }
+      /* Humidity bar */
+      .humidity-bar {
+        width: 50px;
+        background-color: #27ae60;
+        position: absolute;
+        bottom: 0;
+        transition: height 0.5s ease;
+      }
 
-  /* Input field container */
-  .input-container {
-    margin-top: 20px;
-    text-align: center;
-  }
+      /* Input field container */
+      .input-container {
+        margin-top: 20px;
+        text-align: center;
+      }
 
-  /* Input field styles */
-  input[type="number"] {
-    width: 200px;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+      /* Input field styles */
+      input[type="number"] {
+        width: 200px;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
 
-  /* Select field styles */
-.temperature-unit {
-  width: 200px;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-</style>
+      /* Select field styles */
+      .temperature-unit {
+        width: 200px;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+      </style>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
