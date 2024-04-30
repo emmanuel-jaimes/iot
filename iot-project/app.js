@@ -7,7 +7,7 @@ const { getDatabase, ref, onValue, set, update, get } = require('firebase/databa
 // Your web app's Firebase configuration
 const firebaseConfig = {
 
-    apiKey: "AIzaSyBTfqxmmuPPHPrFrP6HHwhufslo_nFmDeo",
+    apiKey: "{API_KEY}",
   
     authDomain: "iot-project-8aba5.firebaseapp.com",
   
